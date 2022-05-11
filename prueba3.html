@@ -7,28 +7,86 @@
     <title>Document</title>
 </head>
 <body>
-    <article>
-        <header>
-            <h1>What Does WWF Do?</h1>
-            <p>WWF's mission:</p>
-        </header>
-        <p>WWF's mission is to stop the degradation of our planet's natural environment,
-        and build a future in which humans live in harmony with nature.</p>
-    </article>
+   
 
-    <nav>
-        <a href="/html/">HTML</a> |
-        <a href="/css/">CSS</a> |
-        <a href="/js/">JavaScript</a> |
-        <a href="/jquery/">jQuery</a>
-    </nav>
-
-    <p>My family and I visited The Epcot center this summer.</p>
+    <main>
+        <article>
+            <header>
+                <h1>What Does WWF Do?</h1>
+                <p>WWF's mission:</p>
+                <nav>
+                    <a href="/html/">HTML</a> |
+                    <a href="/css/">CSS</a> |
+                    <a href="/js/">JavaScript</a> |
+                    <a href="/jquery/">jQuery</a>
+                </nav>
+            </header>
+            <p>WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.</p>
+            <figure style="text-align:center;">
+                <img src="img/6308.jpg" alt="The Pulpit Rock" width="304" height="228">
+            </figure>
+            <figure style="background-color:rgb(221, 221, 221); text-align: center;">
+                <img src="img/6308.jpg" alt="The Pulpit Rock" width="304" height="228">
+                <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+                </figure>
+        </article>
     
-    <aside>
-        <h4>Epcot Center</h4>
-        <p>The Epcot Center is a theme park in Disney World, Florida.</p>
-    </aside>
+        <p>My family and I visited The Epcot center this summer.</p>
+    
+        <aside>
+            <h4>Epcot Center</h4>
+            <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+            <details>
+                <p> - by Refsnes Data. All Rights Reserved.</p>
+                <p>All content and graphics on this web site are the property of the company Refsnes
+                Data.</p>
+            </details>
+            <details>
+                <summary>Copyright 1999-2014.</summary>
+                <p> - by Refsnes Data. All Rights Reserved.</p>
+                <p>All content and graphics on this web site are the property of the company Refsnes
+                Data.</p>
+            </details>
+        </aside>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+        <article>
+            <h1>Google Chrome</h1>
+            <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+        </article>
+        <article>
+            <h1>Internet Explorer</h1>
+            <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+        </article>
+        <article>
+            <h1>Mozilla Firefox</h1>
+            <p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>
+        </article>
+
+        <section style="border: 1px solid black;">
+            <h2>Vídeos</h2>
+        <video id="video" width="320" height="240" controls="controls" autoplay="autoplay" muted loop="loop">
+            <source src="src/videos/Pexels Videos 2386439.mp4" type="video/mp4">
+            <source src="img/movie.ogg" type="video/ogg">
+            <source src="img/movie.webm" type="video/webm">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="es" label="Spanish">
+            Tu navegador no es compatible con la etiqueta vídeo.
+        </video>
+        <button id="play_video" onclick="reproduceVideo()">Play</button>
+        <button id="pause_video" onclick="pauseVideo()">Pause</button>
+        <button id="stop_video" onclick="stopVideo()">Stop</button>
+        <p><button id="obtener_posicion_video" onclick="positionVideo()">Obtener posicion del video</button>
+        <input id="timeVideo" type="number" placeholder="Especifica el tiempo para desplazar el video"><button id="set_posicion_video" onclick="setPositionVideo()">Mover video de posicion</button></p>
+        </section>
+        
+        <section style="background-color:azure">
+            <h2>Youtube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xFxMx7DsqP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Iframe</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.586469019195!2d2.029594044547158!3d41.33456250276358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49c7d19ff7ed5%3A0xd0cfde5b453c3a16!2sCarrer%20de%20la%20Riera%20del%20Fonollar%2C%202%2C%2008830%20Sant%20Boi%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1652269589496!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
 
     <footer>
         <p>Posted by: Hege Refsnes</p>
@@ -37,5 +95,27 @@
         <address>JFK, 23</address>
     </footer>
 
+    <script>
+        let play = document.getElementById("video");
+
+        function reproduceVideo(){
+            play.play();
+        }
+        function pausaVideo(){
+            play.pause();
+        }
+        function pauseVideo(){
+            play.pause();
+        }
+        function positionVideo(){
+            alert(play.currentTime);
+        }
+        function setPositionVideo(){
+            let tiempo = document.getElementById("timeVideo");
+            console.log(tiempo.value);
+            play.currentTime = tiempo.value;
+        }
+       
+    </script>
 </body>
 </html>
