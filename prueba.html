@@ -8,13 +8,15 @@
 </head>
 <body>
     <header style="background-color: rgb(253, 211, 132);">Menú de la página</header>
+    <p id="date"></p>
     <h1 id="titulo_pagina">Título de la página</h1>
     <div id="menu">
         <ul>
             <li><a href="#formulario">Formulario</a></li>
             <li><a href="#contenido1">Contenido 1</a></li>
             <li><a href="#contenido2">Contenido 2</a></li>
-            <li><a href="prueba2.html#content2" target="_blank">Más contenidos</a></li>
+            <li><a href="prueba2.html#content2">Más contenidos</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Festival_de_la_Canci%C3%B3n_de_Eurovisi%C3%B3n_2022#Pa%C3%ADses_participantes" target="_blank" rel="nofollow">Contenido externo</a></li>
         </ul>
     </div>
     <div id="formulario">
@@ -56,8 +58,14 @@
     </div>
 
     <footer style="background-color: rgb(155, 155, 248);">
-        email: <bdo dir="rtl">moc.liamg@20udroj</bdo>
+        <p>Posted by: Jorge Duran</p>
+       <p>email: <a><bdo dir="rtl">moc.liamg@20udroj</bdo></p>
+        <address>Ronda Sant Ramon 160</address>
     </footer>
 
+<script>
+    const d = new Date();
+    document.getElementById("date").innerHTML = d;
+</script>
 </body>
 </html>
