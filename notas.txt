@@ -1,0 +1,15 @@
+********************
+*Enlaces de interés*
+********************
+
+1- Recuperar un archivo o todo el repositorio a una versión anterior
+https://victorhckinthefreeworld.com/2016/07/28/git-recuperar-un-archivo-o-todo-el-repositorio-a-una-version-anterior/
+
+2- Exit command in Git Bash for VS Code
+https://stackoverflow.com/questions/65488848/exit-command-in-git-bash-for-vs-code
+
+3- Ver el historial de commits de un proyecto con git log
+https://www.unidadvirtual.com/ver-el-historial-de-commits-de-un-proyecto-con-git-log
+
+4- git stash
+https://www.atlassian.com/es/git/tutorials/saving-changes/git-stash
