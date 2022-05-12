@@ -13,3 +13,6 @@ https://www.unidadvirtual.com/ver-el-historial-de-commits-de-un-proyecto-con-git
 
 4- git stash
 https://www.atlassian.com/es/git/tutorials/saving-changes/git-stash
+
+5- BEM (Block, Element, Modifier)
+https://en.bem.info/methodology/key-concepts/
