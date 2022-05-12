@@ -1,0 +1,19 @@
+.div1 {
+  background-color: gray;
+}
+
+.div2 {
+  background-color: orange;
+}
+
+.centrado, .rojo {
+  color: red;
+  text-align: center;
+}
+
+footer {
+  background-color: gray;
+  padding: 20px 18px;
+  color: black;
+  font-weight: bold;
+}

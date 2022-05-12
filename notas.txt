@@ -16,3 +16,12 @@ https://www.atlassian.com/es/git/tutorials/saving-changes/git-stash
 
 5- BEM (Block, Element, Modifier)
 https://en.bem.info/methodology/key-concepts/
+
+6- ¿QUÉ ES LA METODOLOGÍA BEM? Y ¿CÓMO SE APLICA AL FRONT-END?
+https://fixu.cl/que-es-la-metodologia-bem-y-como-se-aplica-al-front-end/
+
+7- ¿Debo crear un bloque o un elemento?
+https://en.bem.info/methodology/quick-start/#should-i-create-a-block-or-an-element
+
+8- SASS
+https://www.w3schools.com/sass/

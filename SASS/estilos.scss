@@ -1,0 +1,20 @@
+@mixin myHeader{
+    background-color: rgb(219, 219, 219);
+    padding: 20px 18px;
+}
+
+header{
+    @include myHeader();
+    color: rgb(58, 58, 58);
+}
+.content2{
+    background-color: rgb(255, 99, 71);
+}
+h3{
+    color: green;
+    font-weight: bold;
+}
+footer{
+    @include myHeader();
+    color: black;
+}

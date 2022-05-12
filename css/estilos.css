@@ -1,13 +1,20 @@
-header{
-    background-color: orange;
+header {
+  background-color: #dbdbdb;
+  padding: 20px 18px;
+  color: #3a3a3a;
 }
-.content2{
-    background-color: rgb(255, 99, 71);
+
+.content2 {
+  background-color: tomato;
 }
-h3{
-    color: green;
-    font-weight: bold;
+
+h3 {
+  color: green;
+  font-weight: bold;
 }
-footer{
-    background-color: orange;
+
+footer {
+  background-color: #dbdbdb;
+  padding: 20px 18px;
+  color: black;
 }
