@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAA;EACD,gBAAgB,EAAE,IAAI;CACzB;;AAED,AAAA,KAAK,CAAA;EACD,gBAAgB,EAAE,MAAM;CAC3B;;AAED,AAAA,SAAS,EAAE,KAAK,CAAA;EACZ,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,MAAM,CAAA;EACF,gBAAgB,EAAE,IAAI;EACtB,OAAO,EAAE,SAAS;EAClB,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "../SASS/ejercicio.scss"
+    ],
+    "names": [],
+    "file": "ejercicio.css"
+}
