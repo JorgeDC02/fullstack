@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas JAVASCRIP frontend</title>
+    <script src="../JS/primerjavascript.js"></script>
+    <script>
+        //alert("hola");
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../JS/main.js"></script>
+</head>
+<body>
+    <h1>Pruebas JAVASCRIP frontend</h1>
+
+    <p id="demo">Valor de párrafo inicial</p>
+    <p><button onclick="myFunction()">Clica aqí para cambiar</button></p>
+    <p><button onclick="myFunction2()">Clica aqí para resetear</button></p>
+
+    <button onclick="window.print()">Print this page</button>
+    <p>Usuario: <span id="_localStorage"></span> </p>
+    <p>Fecha de entrada: <span id="entrada"></span> </p>
+    <p><button onclick="ficharEntrada()">Fichar entrada</button></p>
+    
+    <noscript>
+        Lo siento tu navegador no acepta JAVASCRIP
+    </noscript>
+    <script>
+        document.write("Hello world");
+        var count = 0;
+        function myFunction() {
+            count++;
+           if(count < 2){
+                document.getElementById("demo").innerHTML = "<p style='background-color:green'>Párrafo cambiado</p>";
+                console.log("Valor de count: "+count);
+           }
+            
+            if(count == 2){
+                document.getElementById("demo").innerHTML = "<p style='background-color:red'>Párrafo reseteado</p>";
+                count = 0;
+                console.log("Valor de count: "+count);
+            }
+           
+        }
+        
+        console.log("Valor de count: "+count);
+
+        function myFunction2() {
+            document.getElementById("demo").innerHTML = "Párrafo reseteado";
+        }
+
+
+
+        function ficharEntrada(){
+            let tiempo = new Date();
+            let localStorageTime = localStorage.setItem("entrada", tiempo);
+            document.getElementById("entrada").innerHTML = localStorage.getItem("entrada");
+            //console.log(tiempo);
+        }
+        document.getElementById("entrada").innerHTML = localStorage.getItem("entrada");
+
+        console.log();
+
+        var localStorage = localStorage.setItem("lastname", nombre);
+        document.getElementById("_localStorage").innerHTML = localStorage.getItem("lastname");
+
+        console.log( localStorage.getItem("lastname"));
+
+    </script>
+</body>
+</html>
