@@ -7,5 +7,9 @@
             "extensionName": ".css",
             "savePath": "/CSS"
         }
-    ]
+    ],
+    "liveSassCompile.settings.includeItems": [
+    
+    ],
+    "liveServer.settings.CustomBrowser": "chrome"
 }

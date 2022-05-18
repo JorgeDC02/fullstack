@@ -23,5 +23,11 @@ https://fixu.cl/que-es-la-metodologia-bem-y-como-se-aplica-al-front-end/
 7- ¿Debo crear un bloque o un elemento?
 https://en.bem.info/methodology/quick-start/#should-i-create-a-block-or-an-element
 
+7B- ¿Qué es la metodología BEM en HTML y CSS?
+https://pixelanium.com/que-es-la-metodologia-bem-en-html-y-css/
+
 8- SASS
 https://www.w3schools.com/sass/
+
+9- Cómo previsualizar en tiempo real una web con HTTPS en VS Code
+https://www.campusmvp.es/recursos/post/como-previsualizar-web-https-vs-code.aspx#:~:text=Para%20ello%2C%20desde%20la%20paleta,la%20ventana%20de%20VS%20Code.

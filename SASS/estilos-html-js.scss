@@ -1,0 +1,12 @@
+@import "header";
+@import "footer";
+
+header{
+    @include headerStyle;
+}
+
+h1, main{background-color: rgb(231, 231, 231);}
+
+footer{
+    @include footerStyle;
+}
