@@ -36,4 +36,6 @@ const semana7 = {dia:"Domingo", tipo:"Festivo"}
 
 console.table([semana1, semana2, semana3, semana4, semana5, semana6, semana7], ["tipo"]);
 
+let miArray = new Array('Saab', 'Volvo', 'BMW');
+console.log( miArray instanceof Array);
 

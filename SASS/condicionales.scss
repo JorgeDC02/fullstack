@@ -1,0 +1,15 @@
+@import "header";
+@import "footer";
+header{
+    @include headerStyle;
+}
+
+ 
+#micanvas {
+    border: solid 3px gray;  
+    width: 100%;
+}
+
+footer{
+    @include footerStyle;
+}
