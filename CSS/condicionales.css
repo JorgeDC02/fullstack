@@ -22,9 +22,10 @@ header li a:hover {
   background-color: #111;
 }
 
-#micanvas {
+#canvas {
   border: solid 3px gray;
-  width: 100%;
+  /*width: 400px;*/
+  /*width: 100%;*/
 }
 
 footer {
