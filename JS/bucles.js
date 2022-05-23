@@ -38,10 +38,10 @@ if(numero2 < 0){
 }else if(Number.isInteger(numero2)){
     alert("Ingrese un número entero");
     numero2 = prompt("Ingrese un número positivo");
-}else{
-    for(let z = numero2; z >= 0; z--){
-        
-        console.log(`${z},`);
-    }
+}
+
+for(let z = numero2; z >= 0; z--){
+    
+    console.log(`${z},`);
 }
 

@@ -31,3 +31,6 @@ https://www.w3schools.com/sass/
 
 9- Cómo previsualizar en tiempo real una web con HTTPS en VS Code
 https://www.campusmvp.es/recursos/post/como-previsualizar-web-https-vs-code.aspx#:~:text=Para%20ello%2C%20desde%20la%20paleta,la%20ventana%20de%20VS%20Code.
+
+10 - Unicode Character Table
+https://unicode-table.com/en/
