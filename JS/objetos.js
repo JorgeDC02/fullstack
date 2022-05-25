@@ -331,9 +331,50 @@ console.log(`Resultado de la llamada al objeto myObject: ${myObject.gestor}`);
 const myObject2 = function(nombre){
     this.name = nombre,
     this.cliente = "Federico",
-    this.mensaje= "Mensaje de"+this.name,
+    this.mensaje= function(){
+        console.log(`El cliente ${this.cliente} ha enviado un mensaje`);
+    },
     this.transferencia = "Hola "+this.cliente
 }
 let instancia = new myObject2("Jorge Duran");
+instancia.mensaje();
 console.log(`Resultado de la llamada al objeto myObject2: ${instancia.transferencia}`);
 let instancia2 = new myObject2("Pau Duran");
+
+/******************************************************************************************
+* Ejercicio 2 del proyecto: escribe un programa que almacene los objetos creados en el
+* ejercio anterior del proyecto dentro de un array (un array por cada modelo de datos). A
+* continuación, recorre cada uno de los arrays y muestra todas propiedades.
+******************************************************************************************/
+arrayObject = Object.keys(myObject);
+
+
+arrayObject2 = Object.keys(myObject2);
+//console.log(arrayObject2);
+let lon1 = arrayObject.length;
+let lon2 = arrayObject2.length
+console.log(lon1);
+
+console.log(myObject[arrayObject[3]]);
+
+console.log(instancia[arrayObject2[0]]);
+
+//console.log(arrayObject[2].toString()+"()");
+console.log("Resultado: "+instancia[arrayObject[2]]());
+
+for(let i = 0; i < lon1; i++){
+    if(typeof arrayObject2[i] === 'function'    ){
+        console.log(myObject[arrayObject[i]()]);
+    }else{
+        console.log(myObject[arrayObject[i]]);
+    }
+}
+
+for(let i = 0; i < lon2; i++){
+    if(typeof arrayObject2[i] === 'function'    ){
+        console.log(myObject2[arrayObject2[i]()]);
+    }else{
+        console.log(myObject2[arrayObject2[i]]);
+    }
+   
+}
