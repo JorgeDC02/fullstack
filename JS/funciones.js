@@ -117,10 +117,10 @@ const dividir5 = (a, b, callback5) =>  callback5(a / b);
     console.log(`El valor de la operación es: ${resultado}`);
 }*/
 
-suma5(4, 5, callback5);
-resta5(4, 5, callback5);
-multiplicacion5(4, 5, callback5);
-dividir5(4, 5, callback5);
+//suma5(4, 5, callback5);
+//resta5(4, 5, callback5);
+//multiplicacion5(4, 5, callback5);
+//dividir5(4, 5, callback5);
 
 /**************************************************************************************
 * Ejercicio 4: adaptar el ejercicio anterior para integrar el callback en la invocación de las
@@ -128,11 +128,18 @@ dividir5(4, 5, callback5);
 * Utilizar la herramienta de depuración de Chrome para comprobar cómo se ejecuta el
 * programa.
 ***************************************************************************************/
-suma5(4, 5 (resultado) => {
+suma5(4, 5, (resultado) => {
     console.log(`El valor de la operación es: ${resultado}`);
 });
-
-
+resta5(3,1,(resultado) => {
+    console.log(resultado);
+});
+multiplicacion5(5,7,(resultado) => {
+    console.log(resultado);
+});
+dividir5(6,8,(resultado) => {
+    console.log(resultado);
+});
 
 
 
