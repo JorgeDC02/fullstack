@@ -1,0 +1,14 @@
+git --version
+node -v
+npm install -g typescript
+npm init
+tsc -v
+ng --version
+ng serve
+
+/*****************************
+* Crear componente Angular
+******************************/
+
+//Crear componente header
+ng g c shared/header
