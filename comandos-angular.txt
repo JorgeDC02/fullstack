@@ -12,3 +12,10 @@ ng serve
 
 //Crear componente header
 ng g c shared/header
+
+//Crear service
+ng generate service "hero" => nombre del servicio
+
+
+//Modo preproduccion
+ng build
